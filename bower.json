@@ -1,0 +1,29 @@
+{
+  "name": "angular-glossary",
+  "main": "angular-glossary.js",
+  "version": "0.0.1",
+  "homepage": "https://github.com/DevLab2425/angular-glossary",
+  "authors": [
+    "DevLab2425"
+  ],
+  "description": "A directive that outputs a glossary based on a collection of terms.",
+  "keywords": [
+    "angular",
+    "angularjs",
+    "angular.js",
+    "glossary",
+    "angular glossary",
+    "angularjs glossary"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.2.21"
+  }
+}
