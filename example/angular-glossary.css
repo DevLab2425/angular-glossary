@@ -1,0 +1,6 @@
+.alpha-item{display: inline-block;border:1px solid #ccc;
+    border-radius: 10px; margin: 0 7px;}
+.alpha-item a {
+    padding: 7px;
+    display: block;
+}
