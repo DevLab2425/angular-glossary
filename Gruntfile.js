@@ -64,7 +64,7 @@ module.exports = function(grunt){
 		
 		copy: {
 			example: {
-				src: ['angular-glossary.js', 'angular-glossary.css'],
+				src: ['angular-glossary.js', 'angular-glossary.css', 'bower_components/angular-starts-with-filter/angular-starts-with-filter.js'],
 				dest: 'example/',
 			}
 		}
