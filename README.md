@@ -22,19 +22,44 @@ angular.module('yourApp', ['angular-glossary']);
 ## Usage
 ### HTML
 ```html
-
+<body ng-app="glossaryExample">
+	<div ng-controller="glossaryCtrl">
+		<glossary terms="{{terms}}"></glossary>
+	</div>
+</body>
 ```
 
 ### Javascript
 ```javascript
-
+angular.module('glossaryExample', ['angular-glossary'])
+	.controller('glossaryCtrl', ['$scope', function($scope){
+		$scope.terms = [
+			{
+				term: 'Banana',
+				definition: 'A long, yellow fruit that monkeys love to eat.'
+			},
+			{
+				term: 'Apple',
+				definition: 'A round, green or red fruit that crunches when you bite it.'
+			},
+			{
+				term: 'Watermelon',
+				definition: 'A very large round fruit that\'s green on the outside and red on the inside.'
+			},
+			{
+				term: 'Grape',
+				definition: 'Small round, red or green fruits on a bunch.'
+			},
+			{
+				term: 'Strawberry',
+				definition: 'Small red, tri-AngularJS fruit with seeds on the outside.'
+			}
+		];
+	}]);
 ```
 
-### Output
-August 1 - 31, 2014
-
 ## Example
-The example app can be launched using a simple web server, however, is dependent on a CDN hosted instance of Angular. You'll need to localize Angular to run completely local.
+The example app can be launched using a simple web server, however, it is dependent on a CDN hosted instance of Angular. You'll need to localize Angular to run completely local.
 
 ## Development
 

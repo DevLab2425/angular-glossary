@@ -1,5 +1,5 @@
 angular.module('glossaryExample', ['angular-glossary'])
-	.controller('glossaryCtrl', ['$scope', '$http', function($scope, $http){
+	.controller('glossaryCtrl', ['$scope', function($scope){
 		$scope.terms = [
 			{
 				term: 'Banana',
