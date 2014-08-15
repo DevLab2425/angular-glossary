@@ -4,3 +4,6 @@
     padding: 7px;
     display: block;
 }
+.alpha-item.active {
+background: #0f0;
+}

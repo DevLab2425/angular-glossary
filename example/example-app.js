@@ -1,8 +1,8 @@
 angular.module('glossaryExample', ['angular-glossary'])
-	.controller('glossaryCtrl', ['$scope', function($scope){
+	.controller('glossaryCtrl', ['$scope', '$http', function($scope, $http){
 		$scope.terms = [
 			{
-				term: 'Bananda',
+				term: 'Banana',
 				definition: 'A long, yellow fruit that monkeys love to eat.'
 			},
 			{
@@ -16,6 +16,10 @@ angular.module('glossaryExample', ['angular-glossary'])
 			{
 				term: 'Grape',
 				definition: 'Small round, red or green fruits on a bunch.'
+			},
+			{
+				term: 'Strawberry',
+				definition: 'Small red, tri-AngularJS fruit with seeds on the outside.'
 			}
-		]
+		];
 	}]);

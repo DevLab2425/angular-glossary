@@ -8,7 +8,10 @@ Glossary.directive('glossary', function(){
 		restrict: 'EA',
 		replace: true,
 		templateUrl: 'template/glossary.html',
-		controller: function ($scope){
+		controller: function ($scope, $http){
+			
+			var _alpha = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
+			
 			$scope.createAlphaList = function(terms){
 				var list = [];
 				angular.forEach(terms, function(term){
@@ -60,8 +63,8 @@ angular.module('template/glossary.html', [])
 			'<div class="glossary">' +
 			'<div class="alpha-wrap">' +
 				'<ul class="alpha-list">' +
-					'<li class="alpha-item"><a href ng-click="selectTerms()">All</a></li>' +
-					'<li class="alpha-item" ng-repeat="alpha in alphaList">' +
+					'<li class="alpha-item" ng-class="{\'active\':!filterAlpha}"><a href ng-click="selectTerms()">All</a></li>' +
+					'<li class="alpha-item" ng-class="{\'active\':alpha.toLowerCase() === filterAlpha}" ng-repeat="alpha in alphaList">' +
 						'<a href ng-click="selectTerms(alpha)">{{alpha}}</a>' +
 					'</li>' +
 				'</ul>' +
