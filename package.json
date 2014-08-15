@@ -1,6 +1,6 @@
 {
   "name": "angular-glossary",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "title": "Angular Glossary",
   "description": "A directive that outputs a glossary based on a collection of terms.",
   "main": "angular-glossary.js",
