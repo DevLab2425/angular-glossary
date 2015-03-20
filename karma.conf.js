@@ -14,6 +14,7 @@ module.exports = function(config){
 			'bower_components/angular/angular.js',
 			'bower_components/angular-mocks/angular-mocks.js',
 			'angular-glossary.js',
+			'bower_components/angular-starts-with-filter/angular-starts-with-filter.js',
 			'test/*.js'
 		],
 
@@ -48,7 +49,11 @@ module.exports = function(config){
 		// - Safari (only Mac)
 		// - PhantomJS
 		// - IE (only Windows)
-		browsers: ['Chrome', 'Firefox', 'Safari'],
+		browsers: [
+			'Chrome', 
+			'Firefox', 
+			'Safari'
+		],
 
 		// If browser does not capture in given timeout [ms], kill it
 		captureTimeout: 5000,

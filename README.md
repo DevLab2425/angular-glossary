@@ -7,7 +7,7 @@ A directive that outputs a glossary based on a collection of terms.
 
 ## Installation
 
-Download [angular-glossary.min.js](#) or install with bower
+Download [angular-glossary.min.js](https://raw.githubusercontent.com/DevLab2425/angular-glossary/master/angular-glossary.min.js) or install with bower
 
 ```BASH
 $ bower install angular-glossary --save
